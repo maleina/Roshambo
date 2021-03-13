@@ -30,6 +30,9 @@
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1W-FL-Hfu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -44,6 +47,9 @@
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9g-dH-6cZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM3-xG-e7N">
                                                 <rect key="frame" x="195" y="0.0" width="195" height="65"/>
@@ -53,6 +59,9 @@
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="34v-ub-XUu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -81,6 +90,11 @@
                             <constraint firstItem="p32-Ga-Y9F" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qW0-VE-vgc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paperButton" destination="xha-8f-ewq" id="s01-mw-vto"/>
+                        <outlet property="rockButton" destination="wCg-oT-WNw" id="FzE-Ix-Gap"/>
+                        <outlet property="scissorsButton" destination="OM3-xG-e7N" id="sSW-w4-kwU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
