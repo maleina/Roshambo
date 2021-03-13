@@ -36,9 +36,11 @@ class PlayGame: UIViewController {
     
     
     @IBAction func paperChosen(_ sender: UIButton){
+        performSegue(withIdentifier: "showResultsfromPaper", sender: self)
     }
     
     @IBAction func scissorsChosen(_ sender: UIButton) {
+        // segue is handled automatically in prepare for segue
     }
     
     
@@ -64,6 +66,13 @@ class PlayGame: UIViewController {
             let controller = segue.destination as! MatchResults
 
             controller.player = "scissors"
+            controller.opponent = getOpponentPlay()
+        }
+        
+        if segue.identifier == "showResultsfromPaper" {
+            let controller = segue.destination as! MatchResults
+
+            controller.player = "paper"
             controller.opponent = getOpponentPlay()
         }
     }

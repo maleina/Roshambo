@@ -118,11 +118,6 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaperCoversRock" translatesAutoresizingMaskIntoConstraints="NO" id="kB1-cS-Jqo">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -174,7 +169,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7hY-sh-daP"/>
+        <segue reference="3Kn-p1-xcU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="PaperCoversRock" width="160" height="120"/>

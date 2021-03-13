@@ -27,8 +27,8 @@ class MatchResults: UIViewController {
     // MARK: Lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
-        print(player)
-        print(opponent)
+        //print(player)
+        //print(opponent)
         switch (player, opponent) {
         case ("paper", "rock"):
             image.image = UIImage(named: "PaperCoversRock")
