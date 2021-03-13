@@ -41,23 +41,9 @@ class PlayGame: UIViewController {
     @IBAction func scissorsChosen(_ sender: UIButton) {
     }
     
-    // MARK: Helper Functions
     
-    func playGame(_ sender: UIButton){
-        
-        let player : String
-        let opponent: String = getOpponentPlay()
-        
-        switch(ButtonType(rawValue: sender.tag)!) {
-        case .paper:
-            player = "paper"
-        case .rock:
-            player = "rock"
-        case .scissors:
-            player = "scissors"
-        }
-        
-    }
+    
+    // MARK: Helper Functions
     
     
     func getOpponentPlay() -> String{
@@ -72,9 +58,14 @@ class PlayGame: UIViewController {
     }
     
     // MARK: Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showResultsFromScissors" {
+            let controller = segue.destination as! MatchResults
+
+            controller.player = "scissors"
+            controller.opponent = getOpponentPlay()
+        }
     }
 
 

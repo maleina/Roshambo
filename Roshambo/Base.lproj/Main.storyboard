@@ -61,6 +61,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="scissorsChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5y0-QT-hkD"/>
+                                                    <segue destination="NVN-u0-Alw" kind="presentation" identifier="showResultsFromScissors" id="7hY-sh-daP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,6 +95,7 @@
                         <outlet property="paperButton" destination="xha-8f-ewq" id="s01-mw-vto"/>
                         <outlet property="rockButton" destination="wCg-oT-WNw" id="FzE-Ix-Gap"/>
                         <outlet property="scissorsButton" destination="OM3-xG-e7N" id="sSW-w4-kwU"/>
+                        <segue destination="NVN-u0-Alw" kind="modal" identifier="showResultsfromPaper" id="3Kn-p1-xcU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,11 +107,11 @@
             <objects>
                 <viewController storyboardIdentifier="MatchResults" id="NVN-u0-Alw" customClass="MatchResults" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Pg-Lf-3zs">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aJx-ck-GMs">
-                                <rect key="frame" x="20" y="242" width="350" height="360"/>
+                                <rect key="frame" x="20" y="215" width="350" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Klj-gk-iLS">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
@@ -171,6 +173,9 @@
             <point key="canvasLocation" x="738" y="72"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7hY-sh-daP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="PaperCoversRock" width="160" height="120"/>
         <image name="paper" width="75" height="65"/>
