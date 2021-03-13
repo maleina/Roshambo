@@ -31,7 +31,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1W-FL-Hfu"/>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="QG6-xo-bGu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -39,7 +39,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3GG-2i-hcB">
                                         <rect key="frame" x="0.0" y="115" width="390" height="65"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCg-oT-WNw">
+                                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCg-oT-WNw">
                                                 <rect key="frame" x="0.0" y="0.0" width="195" height="65"/>
                                                 <state key="normal" image="rock"/>
                                                 <userDefinedRuntimeAttributes>
@@ -48,10 +48,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9g-dH-6cZ"/>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eu1-ud-agG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM3-xG-e7N">
+                                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM3-xG-e7N">
                                                 <rect key="frame" x="195" y="0.0" width="195" height="65"/>
                                                 <state key="normal" image="scissors"/>
                                                 <userDefinedRuntimeAttributes>
@@ -60,7 +60,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="34v-ub-XUu"/>
+                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQA-A9-wvu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
