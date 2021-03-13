@@ -31,7 +31,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="QG6-xo-bGu"/>
+                                                    <action selector="paperChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8B-D9-8ZQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -48,7 +48,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eu1-ud-agG"/>
+                                                    <action selector="rockChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8t-l7-Nuq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM3-xG-e7N">
@@ -60,7 +60,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="playGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQA-A9-wvu"/>
+                                                    <action selector="scissorsChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5y0-QT-hkD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -103,7 +103,7 @@
         <!--Match Results-->
         <scene sceneID="ap0-3G-Wsg">
             <objects>
-                <viewController id="NVN-u0-Alw" customClass="MatchResults" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchResults" id="NVN-u0-Alw" customClass="MatchResults" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Pg-Lf-3zs">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +141,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTO-pW-h5V">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
                                                 <state key="normal" title="Play Again"/>
+                                                <connections>
+                                                    <action selector="dismiss" destination="NVN-u0-Alw" eventType="touchUpInside" id="rZs-ul-Hqf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -158,6 +161,10 @@
                             <constraint firstItem="154-Vd-hn9" firstAttribute="trailing" secondItem="aJx-ck-GMs" secondAttribute="trailing" constant="20" id="v6O-Gc-VMW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="kB1-cS-Jqo" id="N3r-2m-km2"/>
+                        <outlet property="message" destination="TkI-sJ-UiM" id="G5Z-9j-2EB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjt-Mf-INj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

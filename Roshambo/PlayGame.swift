@@ -8,21 +8,42 @@
 import UIKit
 
 class PlayGame: UIViewController {
+    
+    // MARK: Outlets
 
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
 
+    // MARK: Other variables
+    
     enum ButtonType: Int {
         case paper = 0, rock, scissors
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
-    @IBAction func playGame(_ sender: UIButton){
+    // MARK: Actions
+    
+    @IBAction func rockChosen(_ sender: UIButton) {
+        let controller: MatchResults
+        controller = storyboard?.instantiateViewController(withIdentifier: "MatchResults") as! MatchResults
+
+        controller.player = "rock"
+        controller.opponent = getOpponentPlay()
+
+        present(controller, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func paperChosen(_ sender: UIButton){
+    }
+    
+    @IBAction func scissorsChosen(_ sender: UIButton) {
+    }
+    
+    // MARK: Helper Functions
+    
+    func playGame(_ sender: UIButton){
         
         let player : String
         let opponent: String = getOpponentPlay()
@@ -36,9 +57,8 @@ class PlayGame: UIViewController {
             player = "scissors"
         }
         
-
-
     }
+    
     
     func getOpponentPlay() -> String{
         let randomValue = 1 + arc4random() % 3
@@ -50,6 +70,13 @@ class PlayGame: UIViewController {
         default: return "scissors"
         }
     }
+    
+    // MARK: Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
 
 }
 
