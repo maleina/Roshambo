@@ -20,8 +20,11 @@ class MatchResults: UIViewController {
     
     // MARK: Actions
     
-    @IBAction func dismiss() {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func playAgainButtonPressed() {
+        //self.dismiss(animated: true, completion: nil)
+        if let navigationController = navigationController {
+            navigationController.popToRootViewController(animated: true)
+        }
     }
     
     // MARK: Lifecycle

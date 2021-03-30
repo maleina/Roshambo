@@ -31,7 +31,8 @@ class PlayGame: UIViewController {
         controller.player = "rock"
         controller.opponent = getOpponentPlay()
 
-        present(controller, animated: true, completion: nil)
+        //present(controller, animated: true, completion: nil)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     
